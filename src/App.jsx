@@ -5,6 +5,7 @@ import './App.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Navbar } from './components/Navbar';
 import CustomCarousel from './components/CustomCarousel'
+import Card from './components/Card'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -13,6 +14,7 @@ function App() {
     <>
       <Navbar />
       <CustomCarousel/>
+      <Card/>
     </>
   )
 }

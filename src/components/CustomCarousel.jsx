@@ -4,24 +4,20 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 const CustomCarousel = () => {
   return (
-    <div className="w-full h-screen bg-black">
+    <div className="w-full h-screen">
       <Carousel fade indicators={true}>
         {[
           {
             title: "GROCERIES DELIVERY",
             text: "We know how large objects will act, but things on a small scale just do not act that way.",
-            bg: "https://via.placeholder.dev/1600x900/FF0000/FFFFFF?text=Slide+1",
+            bg: "/src/assets/carousel1.jpg",
           },
           {
             title: "FAST FOOD TO YOUR DOOR",
             text: "Delicious meals delivered fast and fresh.",
-            bg: "https://via.placeholder.dev/1600x900/222222/FFFFFF?text=Slide+2",
+            bg: "https://images.placeholders.dev/350x150",
           },
-          {
-            title: "SNACK ATTACK",
-            text: "Satisfy your cravings anytime, anywhere.",
-            bg: "https://via.placeholder.dev/1600x900/000000/FFFFFF?text=Slide+3",
-          },
+          
         ].map((item, index) => (
           <Carousel.Item key={index}>
             <div
