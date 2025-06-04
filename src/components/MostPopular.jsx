@@ -4,7 +4,7 @@ const MostPopular = () => {
   return (
     <div className="w-full flex flex-col items-center justify-center bg-white">
       <div className="flex flex-col lg:flex-row w-full max-w-6xl">
-        {/* Left Section */}
+        
         <div className="w-full lg:w-1/2 bg-purple-200 flex justify-center items-center p-10"
         style={{
             backgroundImage:"url('src/assets/delivery.png')",

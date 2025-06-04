@@ -9,6 +9,8 @@ import Card from './components/Card'
 import BestsellerProducts from './components/BestSellerProducts';
 import MostPopular from './components/MostPopular';
 import BestsellerProducts2 from './components/BestSellerProducts2';
+import Popular from './components/Popular';
+import Products from './components/Products';
 
 function App() {
   const [count, setCount] = useState(0)
@@ -21,6 +23,8 @@ function App() {
       <BestsellerProducts/>
       <MostPopular/>
       <BestsellerProducts2/>
+      <Popular/>
+      <Products/>
     </>
   )
 }
