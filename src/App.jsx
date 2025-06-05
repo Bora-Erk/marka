@@ -11,6 +11,8 @@ import MostPopular from './components/MostPopular';
 import BestsellerProducts2 from './components/BestSellerProducts2';
 import Popular from './components/Popular';
 import Products from './components/Products';
+import Brands from './components/Brands';
+import Blog from './components/Blog';
 
 function App() {
   const [count, setCount] = useState(0)
@@ -25,6 +27,8 @@ function App() {
       <BestsellerProducts2/>
       <Popular/>
       <Products/>
+      <Brands/>
+      <Blog/>
     </>
   )
 }
