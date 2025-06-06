@@ -5,7 +5,7 @@ import { Phone, MapPin, Mail, Facebook, Twitter, Instagram } from "lucide-react"
 const Footer = () => {
   return (
     <footer className="bg-[#1e2235] text-white py-12 px-8">
-      {/* Üst kısım */}
+      
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center mb-16">
         <div>
           <h2 className="text-2xl md:text-3xl font-bold mb-2">
@@ -20,7 +20,7 @@ const Footer = () => {
         </button>
       </div>
 
-      {/* Orta kısım */}
+      
       <div className="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-5 text-sm mb-16">
         <div>
           <h5 className="font-bold mb-4 ml-7">Company Info</h5>
@@ -74,7 +74,7 @@ const Footer = () => {
         </div>
       </div>
 
-      {/* Alt kısım */}
+      
       <div className="border-t border-gray-700 pt-6 max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center text-sm text-gray-400">
         <p>Made With Love By Finland All Right Reserved</p>
         <div className="flex space-x-4 mt-4 md:mt-0 text-blue-400">
