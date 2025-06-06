@@ -13,6 +13,7 @@ import Popular from './components/Popular';
 import Products from './components/Products';
 import Brands from './components/Brands';
 import Blog from './components/Blog';
+import Footer from './components/Footer';
 
 function App() {
   const [count, setCount] = useState(0)
@@ -29,6 +30,7 @@ function App() {
       <Products/>
       <Brands/>
       <Blog/>
+      <Footer/>
     </>
   )
 }
