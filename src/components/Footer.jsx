@@ -75,7 +75,7 @@ const Footer = () => {
       </div>
 
       
-      <div className="border-t border-gray-700 pt-6 max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center text-sm text-gray-400">
+      <div className="pt-6 max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center text-sm text-gray-400">
         <p>Made With Love By Finland All Right Reserved</p>
         <div className="flex space-x-4 mt-4 md:mt-0 text-blue-400">
           <Facebook size={20} className="cursor-pointer hover:text-blue-500" />
