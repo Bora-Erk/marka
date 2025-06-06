@@ -36,7 +36,7 @@ const Footer = () => {
           <ul className="space-y-2 text-gray-300">
             <li>About Us</li>
             <li>Carrier</li>
-            <li className="font-semibold text-white">We are hiring</li>
+            <li>We are hiring</li>
             <li>Blog</li>
           </ul>
         </div>
