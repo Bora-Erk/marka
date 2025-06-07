@@ -21,7 +21,7 @@ const Footer = () => {
       </div>
 
       
-      <div className="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-5 text-sm mb-16">
+      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-5 text-sm mb-16">
         <div>
           <h5 className="font-bold mb-4 ml-7">Company Info</h5>
           <ul className="space-y-2 text-gray-300">
@@ -75,9 +75,9 @@ const Footer = () => {
       </div>
 
       
-      <div className="pt-6 max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center text-sm text-gray-400">
+      <div className="pt-6 max-w-6xl mx-auto flex flex-col justify-center items-center text-sm text-gray-400 space-y-4">
         <p>Made With Love By Finland All Right Reserved</p>
-        <div className="flex space-x-4 mt-4 md:mt-0 text-blue-400">
+        <div className="flex space-x-4 text-blue-400">
           <Facebook size={20} className="cursor-pointer hover:text-blue-500" />
           <Twitter size={20} className="cursor-pointer hover:text-blue-500" />
           <Instagram size={20} className="cursor-pointer hover:text-blue-500" />
@@ -88,3 +88,4 @@ const Footer = () => {
 };
 
 export default Footer;
+
