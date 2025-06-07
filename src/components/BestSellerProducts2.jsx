@@ -29,10 +29,17 @@ const BestsellerProducts = () => {
     <div className="max-w-6xl mx-auto px-6 py-10">
       <div className="flex flex-col md:flex-row">
         
-     
+        {/* Donut görseli — HTML'de en üstte */}
+        <div
+          className="w-full md:w-1/3 order-2 md:order-1 bg-yellow-400 flex flex-col justify-center items-start px-10 py-80 md:py-80 text-black bg-no-repeat bg-center md:bg-right bg-[length:370px] md:bg-[length:370px]"
+          style={{
+            backgroundImage: "url('src/assets/donut.jpg')",
+          }}
+        >
+        </div>
 
-        
-        <div className="w-full md:w-2/3 px-6 md:px-10 py-6">
+        {/* BESTSELLER PRODUCTS */}
+        <div className="w-full md:w-2/3 order-1 md:order-2 px-6 md:px-10 py-6">
           <div className="flex flex-col items-center md:flex-row md:justify-between md:items-center mb-6">
             <h2 className="text-lg font-bold mb-4 md:mb-0">BESTSELLER PRODUCTS</h2>
             <div className="flex flex-col items-center md:flex-row md:gap-6">
@@ -52,7 +59,7 @@ const BestsellerProducts = () => {
             </div>
           </div>
 
-          
+          {/* Ürünler */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {[...products, ...products].map((product, index) => (
               <div key={index} className="text-center">
@@ -71,18 +78,14 @@ const BestsellerProducts = () => {
             ))}
           </div>
         </div>
-        <div
-        className="w-full md:w-1/3 bg-yellow-400 flex flex-col justify-center items-start px-10 py-80 md:py-80 text-black bg-no-repeat bg-center md:bg-right bg-[length:370px] md:bg-[length:370px]"
-        style={{
-        backgroundImage: "url('src/assets/donut.jpg')",
-        }}
-        >
-        
-        </div>
+
       </div>
     </div>
   );
 };
 
 export default BestsellerProducts;
+
+
+
 
