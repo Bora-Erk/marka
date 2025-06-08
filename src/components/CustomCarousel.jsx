@@ -1,6 +1,7 @@
 import React from 'react';
 import { Carousel, Button } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { Link } from 'react-router-dom';
 
 const CustomCarousel = () => {
   return (
@@ -26,9 +27,9 @@ const CustomCarousel = () => {
               <div className="p-4 md:p-8 text-center text-white max-w-[90%] md:max-w-[600px] mx-auto">
                 <h1 className="text-3xl md:text-5xl font-bold mb-4">{item.title}</h1>
                 <p className="text-base md:text-lg mb-6">{item.text}</p>
-                <Button variant="primary" className="text-white text-lg px-6 py-2">
+                <Link to='/shop'><Button variant="primary" className="text-white text-lg px-6 py-2">
                   Start Now
-                </Button>
+                </Button></Link>
               </div>
             </div>
           </Carousel.Item>

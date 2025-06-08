@@ -14,25 +14,46 @@ import Products from './components/Products';
 import Brands from './components/Brands';
 import Blog from './components/Blog';
 import Footer from './components/Footer';
+import ShopHeader from './components/ShopHeader'
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
+import ShopCards from './components/ShopCards';
+import ProductList from './components/ProductList';
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <Navbar />
-      <CustomCarousel/>
-      <Card/>
-      <BestsellerProducts/>
-      <MostPopular/>
-      <BestsellerProducts2/>
-      <Popular/>
-      <Products/>
-      <Brands/>
-      <Blog/>
+    <Router>
+      <Navbar/>
+
+      <Switch>
+        <Route exact path="/">
+          <CustomCarousel/>
+          <Card/>
+          <BestsellerProducts/>
+          <MostPopular/>
+          <BestsellerProducts2/>
+          <Popular/>
+          <Products/>
+          <Brands/>
+          <Blog/>
+        </Route>
+
+        <Route path="/shop">
+          <ShopHeader/>
+          <ShopCards/>
+          <ProductList/>
+        </Route>
+
+      </Switch>
+
       <Footer/>
-    </>
+    </Router>
   )
 }
 
 export default App
+
