@@ -46,7 +46,6 @@ function App() {
         <Route path="/shop">
           <ShopHeader/>
           <ShopCards/>
-          <FilterRow/>
           <ProductList/>
         </Route>
 
