@@ -1,14 +1,16 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import {
   Pagination,
   PaginationItem,
   PaginationLink,
 } from "reactstrap";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import FilterRow from "../components/FilterRow.jsx"; 
+
 
 const products = Array.from({ length: 30 }, (_, i) => ({
   id: i + 1,
-  image: `https://picsum.photos/id/${i + 10}/200/300`, 
+  image: `https://picsum.photos/id/${i + 10}/200/300`,
   title: "Graphic Design",
   department: "English Department",
   oldPrice: "$16.48",
@@ -16,8 +18,25 @@ const products = Array.from({ length: 30 }, (_, i) => ({
 }));
 
 const ProductList = () => {
-  const [currentPage, setCurrentPage] = useState(1); 
-  const productsPerPage = 12;
+  const [currentPage, setCurrentPage] = useState(1);
+  const [productsPerPage, setProductsPerPage] = useState(12);
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth < 768) {
+        setProductsPerPage(4); 
+      } else {
+        setProductsPerPage(12); 
+      }
+    };
+
+    handleResize(); 
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
 
   const indexOfLastProduct = currentPage * productsPerPage;
   const indexOfFirstProduct = indexOfLastProduct - productsPerPage;
@@ -34,10 +53,14 @@ const ProductList = () => {
 
   return (
     <div className="container my-5">
-      
+      <FilterRow totalCount={products.length} />
+
       <div className="row">
         {currentProducts.map((product) => (
-          <div key={product.id} className="col-6 col-md-3 mb-4 d-flex flex-column align-items-center">
+          <div
+            key={product.id}
+            className="col-12 col-sm-6 col-md-3 mb-4 d-flex flex-column align-items-center"
+          >
             <img
               src={product.image}
               alt={product.title}
@@ -52,20 +75,22 @@ const ProductList = () => {
               </span>
               <span className="text-success fw-bold">{product.newPrice}</span>
             </div>
-            
+            {/* Renk noktaları */}
             <div className="d-flex gap-1">
-              {["#00C8C8", "#E7AE13", "#965A38", "#009688"].map((color, index) => (
-                <span
-                  key={index}
-                  style={{
-                    backgroundColor: color,
-                    width: "10px",
-                    height: "10px",
-                    borderRadius: "50%",
-                    display: "inline-block",
-                  }}
-                ></span>
-              ))}
+              {["#00C8C8", "#E7AE13", "#965A38", "#009688"].map(
+                (color, index) => (
+                  <span
+                    key={index}
+                    style={{
+                      backgroundColor: color,
+                      width: "10px",
+                      height: "10px",
+                      borderRadius: "50%",
+                      display: "inline-block",
+                    }}
+                  ></span>
+                )
+              )}
             </div>
           </div>
         ))}
@@ -82,13 +107,18 @@ const ProductList = () => {
               key={index}
               active={currentPage === index + 1}
             >
-              <PaginationLink onClick={() => handlePageChange(index + 1)}>
+              <PaginationLink
+                onClick={() => handlePageChange(index + 1)}
+              >
                 {index + 1}
               </PaginationLink>
             </PaginationItem>
           ))}
           <PaginationItem disabled={currentPage === totalPages}>
-            <PaginationLink next onClick={() => handlePageChange(currentPage + 1)} />
+            <PaginationLink
+              next
+              onClick={() => handlePageChange(currentPage + 1)}
+            />
           </PaginationItem>
         </Pagination>
       </div>
@@ -97,4 +127,6 @@ const ProductList = () => {
 };
 
 export default ProductList;
+
+
 

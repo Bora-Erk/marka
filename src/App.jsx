@@ -23,6 +23,7 @@ import {
 } from "react-router-dom";
 import ShopCards from './components/ShopCards';
 import ProductList from './components/ProductList';
+import FilterRow from './components/FilterRow';
 
 function App() {
   return (
@@ -45,6 +46,7 @@ function App() {
         <Route path="/shop">
           <ShopHeader/>
           <ShopCards/>
+          <FilterRow/>
           <ProductList/>
         </Route>
 
