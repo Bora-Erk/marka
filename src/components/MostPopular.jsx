@@ -50,7 +50,7 @@ const MostPopular = () => {
         </div>
       </div>
 
-      {/* Alt Bilgi Kutuları */}
+      
       <div className="grid grid-cols-1 md:grid-cols-4 gap-6 mt-10 mb-10 px-4 w-full max-w-6xl">
         {[1, 2, 3, 4].map((item) => (
           <div key={item} className="flex flex-col items-start">
