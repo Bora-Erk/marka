@@ -4,7 +4,7 @@ const Popular = () => {
   return (
     <div className="flex flex-col lg:flex-row-reverse w-full min-h-screen">
       
-      {/* Sağ Panel - Büyük Görsel (mobilde üstte olacak) */}
+      
       <div className="lg:w-1/2 w-full h-full">
         <img
           src="src/assets/most-popular-girl.png" 
@@ -13,7 +13,7 @@ const Popular = () => {
         />
       </div>
 
-      {/* Sol Panel - Ürün Kartı */}
+      
       <div className="lg:w-1/2 w-full bg-gray-50 flex flex-col items-center justify-center px-10 py-20 text-center">
         <h2 className="text-2xl font-bold text-gray-900 mb-2">MOST POPULAR</h2>
         <p className="text-gray-600 mb-6 max-w-sm">

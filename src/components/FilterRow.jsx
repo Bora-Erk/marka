@@ -6,12 +6,12 @@ const FilterRow = ({ totalCount }) => {
 
   return (
     <div className="flex flex-wrap items-center justify-between py-4 px-6 border-b border-gray-200 text-sm text-gray-700 mb-4">
-      {/* Result Count */}
+      
       <div className="mb-2 md:mb-0">
         <strong>Showing all {totalCount} results</strong>
       </div>
 
-      {/* Views */}
+      
       <div className="flex items-center space-x-2 mb-2 md:mb-0">
         <span className="font-semibold mr-2">Views:</span>
         <button
@@ -32,7 +32,7 @@ const FilterRow = ({ totalCount }) => {
         </button>
       </div>
 
-      {/* Sort + Filter Grubu */}
+      
       <div className="flex items-center space-x-3 mb-2 md:mb-0">
         <select
           value={sort}

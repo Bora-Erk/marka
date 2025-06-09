@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Search, ShoppingCart, Heart, User, Menu } from 'lucide-react';
+import { Link } from 'react-router-dom/cjs/react-router-dom.min';
 
 export const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -7,11 +8,11 @@ export const Navbar = () => {
   return (
     <nav className="flex items-center justify-between px-8 py-4 shadow-md bg-white relative">
       
-      <div className="text-2xl font-bold text-gray-900">Bandage</div>
+      <Link to='/'className='text-decoration-none'><div className="text-2xl font-bold text-gray-900">Bandage</div></Link>
 
-      {/* Desktop Menu */}
+      
       <ul className="hidden md:flex gap-6 text-gray-600 font-medium">
-        <li className="text-gray-900 font-semibold">Home</li>
+        <Link to='/' className='text-decoration-none'><li className="text-gray-900 font-semibold">Home</li></Link>
         <li className="flex items-center gap-1 cursor-pointer hover:text-gray-900">
           Shop <span>▼</span>
         </li>
@@ -21,7 +22,7 @@ export const Navbar = () => {
         <li className="hover:text-gray-900 cursor-pointer">Pages</li>
       </ul>
 
-      {/* Right Icons */}
+      
       <div className="flex items-center gap-4 text-gray-900">
         <div className="flex items-center gap-1 cursor-pointer">
           <User size={18} />
@@ -36,7 +37,7 @@ export const Navbar = () => {
           <span className="absolute -top-2 -right-2 bg-gray-900 text-white text-xs w-4 h-4 rounded-full flex items-center justify-center">1</span>
         </div>
 
-        {/* Hamburger Icon */}
+        
         <button
           className="md:hidden ml-2"
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
@@ -45,7 +46,7 @@ export const Navbar = () => {
         </button>
       </div>
 
-      {/* Mobile Menu */}
+      
       {isMobileMenuOpen && (
         <div className="absolute top-full left-0 w-full bg-white shadow-md py-6 flex flex-col items-center gap-6 text-lg font-medium text-gray-600 md:hidden z-10">
           <div className="cursor-pointer">Home</div>
