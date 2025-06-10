@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom/cjs/react-router-dom.min";
 
 const Cards = () => {
   const cards = [
@@ -34,9 +35,9 @@ const Cards = () => {
             <h2 className="text-xl font-bold text-gray-800 mb-1">
               {card.title}
             </h2>
-            <a href="#" className="text-xs text-blue-600 underline">
+            <Link to="/product" className="text-xs text-blue-600 text-decoration-none hover:underline">
               {card.linkText}
-            </a>
+            </Link>
           </div>
           <img
             src={card.image}

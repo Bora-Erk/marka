@@ -26,6 +26,8 @@ import ProductList from './components/ProductList';
 import FilterRow from './components/FilterRow';
 import ProductHeader from './components/ProductHeader';
 import ProductMain from './components/ProductMain';
+import ProductDescription from './components/ProductDescription';
+import ProductBestSeller from './components/ProductBestSeller';
 
 function App() {
   return (
@@ -54,6 +56,9 @@ function App() {
         <Route path='/product'>
           <ProductHeader/>
           <ProductMain/>
+          <ProductDescription/>
+          <ProductBestSeller/>
+          <Brands/>
         </Route>
 
       </Switch>

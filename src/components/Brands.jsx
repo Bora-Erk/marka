@@ -11,7 +11,7 @@ const Brands = () => {
   ];
 
   return (
-    <div className="flex flex-col md:flex-row justify-center items-center gap-10 md:gap-20 py-8 bg-gray-100">
+    <div className="flex flex-col md:flex-row justify-center items-center gap-10 md:gap-20 py-8 bg-gray-50">
       {logos.map((logo, index) => (
         <img
           key={index}
