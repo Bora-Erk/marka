@@ -24,6 +24,8 @@ import {
 import ShopCards from './components/ShopCards';
 import ProductList from './components/ProductList';
 import FilterRow from './components/FilterRow';
+import ProductHeader from './components/ProductHeader';
+import ProductMain from './components/ProductMain';
 
 function App() {
   return (
@@ -47,6 +49,11 @@ function App() {
           <ShopHeader/>
           <ShopCards/>
           <ProductList/>
+        </Route>
+
+        <Route path='/product'>
+          <ProductHeader/>
+          <ProductMain/>
         </Route>
 
       </Switch>
