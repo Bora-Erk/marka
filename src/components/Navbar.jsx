@@ -12,13 +12,13 @@ export const Navbar = () => {
 
       
       <ul className="hidden md:flex gap-6 text-gray-600 font-medium">
-        <Link to='/' className='text-decoration-none'><li className="text-gray-900 font-semibold">Home</li></Link>
+        <Link to='/' className='text-decoration-none'><li className="text-gray-600 font-semibold">Home</li></Link>
         <Link to='/product'className="flex items-center gap-1 cursor-pointer hover:text-gray-900 text-decoration-none ">
-          <li className='text-gray-900'> Shop</li> <span className='text-gray-900'>▼</span>
+          <li className='text-gray-600'> Shop</li> <span className='text-gray-900'>▼</span>
         </Link>
         <li className="hover:text-gray-900 cursor-pointer">About</li>
         <li className="hover:text-gray-900 cursor-pointer">Blog</li>
-        <li className="hover:text-gray-900 cursor-pointer">Contact</li>
+        <Link to='/contact' className='text-decoration-none'><li className="text-gray-600 hover:text-gray-900 cursor-pointer">Contact</li></Link>
         <li className="hover:text-gray-900 cursor-pointer">Pages</li>
       </ul>
 
