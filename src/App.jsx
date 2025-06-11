@@ -30,6 +30,7 @@ import ProductDescription from './components/ProductDescription';
 import ProductBestSeller from './components/ProductBestSeller';
 import Contact from './components/Contact';
 import ContactCall from './components/ContactCall';
+import ContactTalk from './components/ContactTalk';
 
 function App() {
   return (
@@ -66,6 +67,7 @@ function App() {
         <Route path='/contact'>
           <Contact/>
           <ContactCall/>
+          <ContactTalk/>
         </Route>
 
       </Switch>
