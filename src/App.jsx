@@ -28,6 +28,8 @@ import ProductHeader from './components/ProductHeader';
 import ProductMain from './components/ProductMain';
 import ProductDescription from './components/ProductDescription';
 import ProductBestSeller from './components/ProductBestSeller';
+import Contact from './components/Contact';
+import ContactCall from './components/ContactCall';
 
 function App() {
   return (
@@ -59,6 +61,11 @@ function App() {
           <ProductDescription/>
           <ProductBestSeller/>
           <Brands/>
+        </Route>
+      
+        <Route path='/contact'>
+          <Contact/>
+          <ContactCall/>
         </Route>
 
       </Switch>
