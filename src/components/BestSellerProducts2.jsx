@@ -29,9 +29,8 @@ const BestsellerProducts = () => {
     <div className="max-w-6xl mx-auto px-6 py-10">
       <div className="flex flex-col md:flex-row">
         
-        
         <div
-          className="w-full md:w-1/3 order-2 md:order-1 bg-yellow-400 flex flex-col justify-center items-start px-10 py-80 md:py-80 text-black bg-no-repeat bg-center md:bg-right bg-[length:370px] md:bg-[length:370px]"
+          className="w-full md:w-1/3 order-2 md:order-1 flex flex-col justify-center items-start px-10 py-80 md:py-80 text-black bg-no-repeat bg-center md:bg-right bg-[length:370px] md:bg-[length:370px]"
           style={{
             backgroundImage: "url('src/assets/donut.jpg')",
           }}

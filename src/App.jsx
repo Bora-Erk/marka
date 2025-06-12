@@ -31,6 +31,10 @@ import ProductBestSeller from './components/ProductBestSeller';
 import Contact from './components/Contact';
 import ContactCall from './components/ContactCall';
 import ContactTalk from './components/ContactTalk';
+import TeamHeader from './components/TeamHeader';
+import TeamHero from './components/TeamHero';
+import Team from './components/Team';
+import TeamCTA from './components/TeamCTA';
 
 function App() {
   return (
@@ -68,6 +72,13 @@ function App() {
           <Contact/>
           <ContactCall/>
           <ContactTalk/>
+        </Route>
+
+        <Route path='/team'>
+          <TeamHeader/>
+          <TeamHero/>
+          <Team/>
+          <TeamCTA/>
         </Route>
 
       </Switch>
