@@ -16,7 +16,8 @@ export const Navbar = () => {
         <Link to='/product'className="flex items-center gap-1 cursor-pointer hover:text-gray-900 text-decoration-none ">
           <li className='text-gray-600'> Shop</li> <span className='text-gray-900'>▼</span>
         </Link>
-        <Link to='/team' className='text-decoration-none'><li className=" text-gray-600 hover:text-gray-900 cursor-pointer">About</li></Link>
+        <Link to='/about' className='text-decoration-none'><li className=" text-gray-600 hover:text-gray-900 cursor-pointer">About</li></Link>
+        <Link to='/team' className='text-decoration-none'><li className=" text-gray-600 hover:text-gray-900 cursor-pointer">Team</li></Link>
         <li className="hover:text-gray-900 cursor-pointer">Blog</li>
         <Link to='/contact' className='text-decoration-none'><li className="text-gray-600 hover:text-gray-900 cursor-pointer">Contact</li></Link>
         <li className="hover:text-gray-900 cursor-pointer">Pages</li>

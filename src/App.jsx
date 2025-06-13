@@ -35,6 +35,12 @@ import TeamHeader from './components/TeamHeader';
 import TeamHero from './components/TeamHero';
 import Team from './components/Team';
 import TeamCTA from './components/TeamCTA';
+import AboutUsHeader from './components/AboutUsHeader';
+import AboutUsText from './components/AboutUsText';
+import AboutUsNumbers from './components/AboutUsNumbers';
+import VideoThumbnail from './components/AboutUsVideo';
+import Brands2 from './components/Brands2';
+import AboutUsTestimonial from './components/AboutUsTestimonial';
 
 function App() {
   return (
@@ -79,6 +85,16 @@ function App() {
           <TeamHero/>
           <Team/>
           <TeamCTA/>
+        </Route>
+
+        <Route path='/about'>
+          <AboutUsHeader/>
+          <AboutUsText/>
+          <AboutUsNumbers/>
+          <VideoThumbnail/>
+          <Team/>
+          <Brands2/>
+          <AboutUsTestimonial/>
         </Route>
 
       </Switch>

@@ -75,7 +75,7 @@ const ProductList = () => {
               </span>
               <span className="text-success fw-bold">{product.newPrice}</span>
             </div>
-            {/* Renk noktaları */}
+            
             <div className="d-flex gap-1">
               {["#00C8C8", "#E7AE13", "#965A38", "#009688"].map(
                 (color, index) => (

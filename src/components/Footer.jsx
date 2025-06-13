@@ -1,4 +1,3 @@
-// Footer.jsx
 import React from "react";
 import { Phone, MapPin, Mail, Facebook, Twitter, Instagram } from "lucide-react";
 

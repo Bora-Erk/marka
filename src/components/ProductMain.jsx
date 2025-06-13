@@ -1,4 +1,3 @@
-// ProductMain.jsx
 import React from "react";
 import { Carousel } from "react-bootstrap";
 import { Star, Heart, ShoppingCart, Eye } from "lucide-react";
